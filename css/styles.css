@@ -1,0 +1,299 @@
+body {
+  font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+}
+
+/* Cabecera */
+
+header.menu {
+  height: 50px;
+  position: relative;
+  width: 100%;
+  background-color: #4CD2EF;
+  margin-bottom: 30px;
+}
+
+nav .opcion {
+  float: left;
+  line-height: 50px;
+  margin-right:5px;
+  border-radius:5px;
+  padding: 0 15px;
+  background:#f1f1f1;border:1px solid #ddd;
+  color:#245582;
+  cursor: pointer;
+  /* Efectos de Transici�n*/
+  -moz-transition: background 0.3s ease-out;
+  -o-transition: background 0.3s ease-out;
+  -webkit-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out;
+}
+
+nav .opcion a {color:#245582;text-decoration: none;}
+
+nav .opcion:hover {
+  text-decoration: none;
+  color:#ffffff;
+  background-color: #245582;
+}
+
+nav .opcion:hover a {color:#FFFFFF;}
+
+nav .opcion.activo {
+  background-color: #aaaaaa;
+}
+
+nav .idioma {
+  float: right;
+  margin-right: 50px;
+}
+
+nav .idioma > label {
+  float: left;
+  width: 100%;
+  height: 40%;
+  margin-top: 5%;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+nav .idioma > select {
+  float: left;
+  padding: 0 5px;
+}
+
+nav .login {
+  float: right;
+}
+
+  nav .login > .elemento {
+      float: left;
+      position: relative;
+      width: 100px;
+      margin-right: 10px;
+  }
+
+      nav .login > .elemento > label {
+          float: left;
+          width: 100%;
+          height: 40%;
+          margin-top: 10%;
+          font-weight: bold;
+          font-size: 12px;
+      }
+
+      nav .login > .elemento > input {
+          float: left;
+          width: 80%;
+          padding: 0 5px;
+      }
+
+      nav .login > .elemento.boton {
+          text-align: center;
+          line-height: 67px;
+      }
+
+  nav .login.log {
+      width: 150px;
+      /*display: none;*/
+  }
+
+      nav .login.log .avatar {
+          float: left;
+      }
+
+          nav .login.log .avatar > img {
+              width: 50px;
+              margin-right: 10px;
+          }
+
+      nav .login.log .usuario {
+          line-height: 50px;
+          float: left;
+          font-size: 16px;
+          font-weight: bold;
+      }
+
+
+/* P�ginas */
+
+.contenedor {
+  padding: 0px 20px;
+}
+
+
+/* Filtros */
+.filtroTabla {
+  width: 100%;
+  background-color: #3274B1;
+color:#ffffff;
+  overflow: hidden;
+  padding: 10px 0px;
+}
+
+  .filtroTabla > .filtro {
+      float: left;
+      margin-left: 30px;
+  }
+
+
+/* Tabla */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #999;
+  font-size: 13px;
+}
+
+  .tabla td, .tabla th {
+      border-collapse: collapse;
+      border: 1px solid #999;
+      padding: 0px 5px;
+  }
+
+.tabla td.opciones {padding:0.5em 0;text-align: center;}
+
+.tabla th {
+  padding: 5px;
+}
+
+/* Tama�o tabla */
+.tabla th:nth-child(1) {
+  width: 2%;
+}
+
+.tabla th:nth-child(2) {
+  width: 10%;
+}
+
+.tabla th:nth-child(3) {
+  width: 20%;
+}
+
+.tabla th:nth-child(4) {
+  width: 20%;
+}
+
+.tabla th:nth-child(5) {
+  width: 30%;
+}
+
+.tabla th:nth-child(6) {
+  width: 18%;
+}
+
+.opciones input {
+  font-size: 12px;
+  border: 1px solid #fff;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+
+.opciones > input.edit {
+  background-color: #59c2f7;
+}
+
+.opciones > input.delete {
+  background-color: #f73b3b;
+}
+
+.opciones > input.ok {
+  background-color: #73f759;
+}
+
+.opciones > input.cancel {
+  background-color: #dddddd;
+}
+
+
+.tablaFooter {
+  overflow: hidden;
+}
+
+/* Preview */
+section.preview {
+  float: left;
+  width: 50%;
+}
+
+/* Contacto*/
+
+section.contacto {
+  float: left;
+  width: 35%;
+}
+
+  section.contacto .enviar {
+      background-color: #59c2f7;
+      border: 1px solid #fff;
+      padding: 5px 8px;
+      cursor: pointer;
+      font-weight: bold;
+  }
+
+  section.contacto .frm-user {
+      float:left;
+      width: 50%;
+  }
+
+  section.contacto .preview {
+      font-size: 13px;
+      float:right;
+      width: 50%;
+  }
+
+      section.contacto form > input {
+          padding: 0 5px;
+      }
+
+
+	/*estilos para la cabecera*/
+	*{box-sizing:border-box;outline: none;}
+	.wrapper{width:960px;margin:0 auto;}
+	.md-mainMenu{display:inline-block;     padding: 18px 0;vertical-align:middle; width:40%;}
+	.lst-menu{list-style:none;padding:0;margin:0;}
+	.frm-header.cont-idioma{width:12%;  vertical-align:middle;   margin-right: 7%;}
+	.hideAccessible{position:absolute;left:-9999px;}
+	.login .elemento{width:80%;float:left;}
+	.login .elemento.boton{position:absolute;top:12px;right:5%;width: 23%; text-align: center;}
+	.btn-submit:hover{opacity:0.7;cursor:pointer;}
+	fieldset{border:none;}
+	select,button,input[type="submit"]{    border: 1px solid #ddd; border-radius: 5px; padding: 0.7em; background: #f1f1f1; color: #245582;}
+	.btn-submit{ border: none;background: url(../images/ico-access.png)no-repeat center center #f1f1f1;    box-shadow: 0px 0px 7px 1px #ddd;background-size: 60%;height: 60px;width: 60px; text-indent: -9999px; border-radius: 100%;}
+	fieldset.login{position:relative;margin: 1.3em 3%; box-sizing: border-box; width: 94%;padding: 1em;border: 1px solid #ddd;background: #f9f9f9;border-radius: 8px;}
+	.login .frm-lbl{width:34%;color:#245582;margin-right:3%;display:inline-block;vertical-align:top;}
+	.login .frm-field{width:50%;margin-bottom: 0.5em;display:inline-block;vertical-align:top;border-radius:5px;padding:0.3em 1%;border:1px solid #ddd;}
+	.md-header{    margin-bottom: 4em;width:100%;height:auto;box-shadow: 0px 0px 7px 7px #3274b1; background: #3274B1;color: #FFF;}
+	.user_logon{ vertical-align:middle;display: inline-block;padding-top: 10px;width:100%;text-align:right;}
+	.frm-header{display:inline-block;vertical-align:middle;width:40%;}
+	.cont_img{width:100%;}
+	.cont_img .img{width:100%;}
+	.avatar.cont_img{    width: 3.5em;   display: inline-block;  margin:0; vertical-align: middle;}
+	.usuario{  display: inline-block;   vertical-align: middle;}
+	.usuario:before{content:"Bienvenido, ";}
+	.contenedor{  color: #245582; font-family: arial;border: 1px solid #ddd;border-radius: 5px; box-sizing: border-box; padding: 2em;background: #f9f9f9; color: #245582;font-family: arial;}
+
+	.md-intro .lst-items .item{margin-bottom:0.5em;}
+	.contenedor .md-title{    width: 100%; padding-bottom: 0.5em; border-bottom: 1px solid #245582; margin-bottom: 2em;}
+	.frm-filter .filtro{float:left;width:30%;    text-align: center;}
+	.frm-filter .cont-active{    float: right;width: 25%;background: #f1f1f1; padding: 0.5em; border-radius: 5px;}
+	.txt-filter{    padding: 0.5em;  border-radius: 5px;}
+	input{color:#245582;}
+	.filtro label{color:#245582;}
+	.frm-filter .cont-active .filtro {width:50%;}
+	.cont-active input{margin-left:5%;}
+
+	.frm-user .cont-field{display: block; margin-bottom:1em;width: 100%;}
+	.frm-user .cont-field .frm-labl{display:inline-block;vertical-align:top;padding-top: 10px;width:20%;}
+	.frm-user .cont-field .frm-field{display:inline-block;vertical-align:top;width:77%;padding:0.7em;border-radius:5px;border: 1px solid #ddd;}
+	.cont-btn .frm-btn{cursor:pointer; margin-left:5%;width: 20%;}
+	.cont-btn .frm-btn:hover{opacity:0.7;}
+	.cont-btn {    margin-top: 3em;  text-align: right;}
+
+.angularExamples{margin: 5em 0;}
+.angularExamples ul{padding:0;list-style: none}
+.angularExamples ul li{margin:1.5em 0;}
+
+.form-date {display: inline-block;width:40%;vertical-align: top;}

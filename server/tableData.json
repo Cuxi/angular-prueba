@@ -1,0 +1,11 @@
+[
+  {"nombre":"Alejandro","apellidos":"Sevillano Moreno","email":"alesevimor@gmail.com","comentarios":"Aprendiendo Angular","active":true},
+  {"nombre":"Carlos","apellidos":"Sevillano Moreno","email":"carsev@gmail.com","comentarios":"Modulos","active":false},
+  {"nombre":"Jose","apellidos":"Rosal Malvar","email":"jose@gmail.com","comentarios":"Controllers","active":true},
+  {"nombre":"Manuel","apellidos":"Moreno Moreno","email":"manuel@gmail.com","comentarios":"Directivas","active":true},
+  {"nombre":"Ivan","apellidos":"Dominguez Raes","email":"ivan@gmail.com","comentarios":"Providers","active":false},
+  {"nombre":"Alejandro","apellidos":"Ramirez Lopez","email":"alejandro@gmail.com","comentarios":"Binding","active":true},
+  {"nombre":"Francisco","apellidos":"Romero Martinez","email":"francisco@gmail.com","comentarios":"SPA","active":true},
+  {"nombre":"Diego","apellidos":"Saez Oliver","email":"diego@gmail.com","comentarios":"Services","active":false},
+  {"nombre":"Javier","apellidos":"Perez Ortiz","email":"javier@gmail.com","comentarios":"Objeto scope","active":false}
+]

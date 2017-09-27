@@ -1,0 +1,9 @@
+<div class="panel ng-scope" ng-repeat="post in posts">
+	<div class="panel-heading clearfix">
+		<h3 class="panel-title ng-binding">{{post.title}}<small class="ng-binding">{{post.author.username}}</small></h3>
+	</div>
+	<p class="well ng-binding">{{post.body}}</p>
+	<!-- ngRepeat: photo in photos[post.id]-->
+	<span class="photo ng-scope" ng-repeat="photo in photos[post.id]">{{post.photos}}</span>
+	<!-- end ngRepeat: post in posts-->
+</div>
